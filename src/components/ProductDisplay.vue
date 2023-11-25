@@ -9,11 +9,11 @@ export default {
   },
   data() {
     return {
-        product: '',                  // data untuk di tampilkan
-        id: 1,                       // acuan mencari data
-        backgroundColor: '',          // color background, nilai default di set untuk tampilan 404
-        colorText: '',                // color text, nilai default di set untuk tampilan 404
-        error: false,                 // Error handling
+        product: '',           // data untuk di tampilkan
+        id: 1,                 // acuan mencari data
+        backgroundColor: '',   // color background, nilai default di set untuk tampilan 404
+        colorText: '',         // color text, nilai default di set untuk tampilan 404
+        error: false,          // Error handling
         btnNext: ''
     }
   },
@@ -96,80 +96,3 @@ export default {
       </div>
     </div>
 </template>
-
-<style scoped>
-  .container {
-    width: 900px;
-    height: 60vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card {
-    background-color: #FFF;
-    width: 70%;
-    padding: 5%;
-    margin-bottom: -20%;
-    border-radius: 6px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .card .gambar {
-    margin-right: 5%;
-  }
-
-  /* loader */
-  .loader {
-    margin: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* buttons */
-  .btn {
-    display: flex;
-    justify-content: space-between;
-  }
-  .btn-buy {
-    width: 48%;
-    color: white;
-    border: 0;
-    height: 40px;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  .btn-next-man {
-    width: 48%;
-    border: 1px solid blue;
-    color: blue;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-
-  .btn-next-woman {
-    width: 48%;
-    border: 1px solid #720060;
-    color: #720060;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-
-  .btn-next-404 {
-    width: 50%;
-    border: 1px solid #000000;
-    color: #000000;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  /* Responsive */
-  /* @media( min-width: 600px ) {
-    
-  } */
-</style>
